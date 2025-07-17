@@ -512,6 +512,7 @@ user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (ft/bundle-2)
 ```
 ### Exercise 2
 
+```
 
 user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (main)
 $ git branch ft/service-redesign
@@ -575,3 +576,4 @@ Fast-forward
  services.html | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
+```
