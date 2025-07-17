@@ -512,3 +512,66 @@ user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (ft/bundle-2)
 ```
 ### Exercise 2
 
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (main)
+$ git branch ft/service-redesign
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (main)
+$ git status
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 3 and 2 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+nothing to commit, working tree clean
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (main)
+$ git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (ft/service-redesign)
+$ git add services.html
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (ft/service-redesign)
+$ git commit -m'Adding services redesigned file'
+[ft/service-redesign baafa3e] Adding services redesigned file
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (ft/service-redesign)
+$ git push origin ft/service-redesign
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 2.62 KiB | 894.00 KiB/s, done.
+Total 9 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:
+remote:      https://github.com/elyse-iradukunda/Gym-Git-Exercise-Solutions/pull/new/ft/service-redesign
+remote:
+To https://github.com/elyse-iradukunda/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/service-redesign -> ft/service-redesign
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (ft/service-redesign)
+$ git diff
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (ft/service-redesign)
+$ git status
+On branch ft/service-redesign
+nothing to commit, working tree clean
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (ft/service-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch and 'origin/main' have diverged,
+and have 3 and 2 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (main)
+$ git merge ft/service-redesign
+Updating 7b1107f..baafa3e
+Fast-forward
+ services.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
