@@ -1585,3 +1585,49 @@ user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (ft/faq-page)
 $
 
 ```
+
+### Exercise 2
+
+```
+   
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (main)
+$ git checkout ft/faq-page
+Switched to branch 'ft/faq-page'
+Your branch is up to date with 'origin/ft/faq-page'.
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (ft/faq-page)
+$ git branch ft/home-page-redesign
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (ft/faq-page)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (main)
+$ git rebase origin main
+Current branch main is up to date.
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (main)
+$ git add home.html
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (main)
+$ git commit -m'bundle 3 exercise 2 end'
+[main e04b0f5] bundle 3 exercise 2 end
+ 1 file changed, 1 insertion(+)
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 327 bytes | 327.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/elyse-iradukunda/Gym-Git-Exercise-Solutions.git
+   e6f19c7..e04b0f5  main -> main
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (main)
+$
+
+```
