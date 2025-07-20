@@ -543,6 +543,7 @@ $ git push origin ft/service-redesign
 Enumerating objects: 14, done.
 Counting objects: 100% (14/14), done.
 Delta compression using up to 16 threads
+
 Compressing objects: 100% (9/9), done.
 Writing objects: 100% (9/9), 2.62 KiB | 894.00 KiB/s, done.
 Total 9 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
@@ -575,5 +576,1012 @@ Updating 7b1107f..baafa3e
 Fast-forward
  services.html | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
+
+```
+
+## Bundle 3
+### Exercise 1
+```
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (main)
+$ git branch ft/team-page
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (main)
+$ git checkout ft/team-page
+M       README.md
+Switched to branch 'ft/team-page'
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (ft/team-page)
+$ git add team.html
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (ft/team-page)
+$ git push origin ft/team-page
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:      https://github.com/elyse-iradukunda/Gym-Git-Exercise-Solutions/pull/new/ft/team-page
+remote:
+To https://github.com/elyse-iradukunda/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/team-page -> ft/team-page
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (ft/team-page)
+$ git commit -m'added new file team.html'
+[ft/team-page 1264391] added new file team.html
+ 1 file changed, 2 insertions(+)
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (ft/team-page)
+$ git push origin ft/team-page
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 339 bytes | 339.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/elyse-iradukunda/Gym-Git-Exercise-Solutions.git
+   f94d4e8..1264391  ft/team-page -> ft/team-page
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (ft/team-page)
+$ git checkout main
+M       README.md
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (main)
+$ git branch ft/contact-page
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (main)
+$ git checkout ft/team-page
+M       README.md
+Switched to branch 'ft/team-page'
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (ft/team-page)
+$ git log
+commit 126439162567d42da173d15d534dd69c31935099 (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Sun Jul 20 14:17:20 2025 +0200
+
+    added new file team.html
+
+commit f94d4e81d191e13ab4d6d109f64c5420d1ae217a (origin/main, origin/HEAD, main, ft/contact-page)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 19:08:09 2025 +0200
+
+    Bundle 2 - exercise 2
+
+commit 4cba6bb9fb88e418b38a4e6d485298a028654c0c
+Merge: baafa3e ea3b1a8
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 19:06:04 2025 +0200
+
+    Bundle 2 - exercise 2
+
+commit baafa3e110a40a9ff4847c8affcee69e896b1a15 (origin/ft/service-redesign, ft/service-redesign)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 18:27:55 2025 +0200
+
+    Adding services redesigned file
+
+commit 7b1107fa7c3e2ea8bcca593a68b104d30b959e77
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 18:08:31 2025 +0200
+
+    End of Bundle 2 exercise 1
+
+commit ea3b1a81ee2fa3770142bbbdbeb70a83a9221a35
+Merge: ab09f62 052f083
+Author: Elyse Iradukunda <ellycreativity8@gmail.com>
+Date:   Thu Jul 17 17:07:32 2025 +0200
+
+    Merge pull request #2 from elyse-iradukunda/ft/bundle-2
+
+    Second bundle exercise 1 solution
+
+commit 0161ce718d61aae93de8c0798fd366ad72bfc0ce (list)
+Merge: a03ac26 ab09f62
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 17:06:35 2025 +0200
+
+    merge
+
+commit a03ac26268e8d53140a6d0b8007136ee2e87fd32
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 16:24:56 2025 +0200
+
+    before going to dev
+
+commit 052f083d6b698c021cca2db5a88061199389ba88 (origin/ft/bundle-2, ft/bundle-2)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 16:09:29 2025 +0200
+
+    Second bundle exercise 1 solution
+
+commit ab09f622df39c613a5981dd13e41d5581a447376
+Merge: b860d43 1b9438c
+Author: Elyse Iradukunda <ellycreativity8@gmail.com>
+Date:   Thu Jul 17 16:02:13 2025 +0200
+
+    Merge pull request #1 from elyse-iradukunda/ft/bundle-2
+
+    added new html files bundle 2
+
+commit 1b9438c6706ba7e1adbceaf74fa8e19273577d5f
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:40:44 2025 +0200
+
+    Add services.html file
+
+commit 75e892396eb610629b7271112a267bdccbbe2156 (origin/dev)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:10:34 2025 +0200
+
+    After adding all file and stashing
+
+commit a6308cba4efe82ba7a7f59a0515861138b351f65
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 12:54:53 2025 +0200
+
+    First bundle solutions exercise 1
+
+commit b860d430dcc9dd3dbb478c640f0e456ded789062 (switch)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 12:42:30 2025 +0200
+
+    feature: I added my first readme file in repo
+(END)
+2, ft/bundle-2)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 16:09:29 2025 +0200
+
+    Second bundle exercise 1 solution
+
+commit ab09f622df39c613a5981dd13e41d5581a447376
+Merge: b860d43 1b9438c
+Author: Elyse Iradukunda <ellycreativity8@gmail.com>
+Date:   Thu Jul 17 16:02:13 2025 +0200
+
+    Merge pull request #1 from elyse-iradukunda/ft/bundle-2
+
+    added new html files bundle 2
+
+commit 1b9438c6706ba7e1adbceaf74fa8e19273577d5f
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:40:44 2025 +0200
+
+    Add services.html file
+
+commit 75e892396eb610629b7271112a267bdccbbe2156 (origin/dev)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:10:34 2025 +0200
+
+    After adding all file and stashing
+
+commit a6308cba4efe82ba7a7f59a0515861138b351f65
+Author: Irael <user@LAPTOP-5DF3FEI>
+2, ft/bundle-2)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 16:09:29 2025 +0200
+
+    Second bundle exercise 1 solution
+
+commit ab09f622df39c613a5981dd13e41d5581a447376
+Merge: b860d43 1b9438c
+Author: Elyse Iradukunda <ellycreativity8@gmail.com>
+Date:   Thu Jul 17 16:02:13 2025 +0200
+
+    Merge pull request #1 from elyse-iradukunda/ft/bundle-2
+
+    added new html files bundle 2
+
+commit 1b9438c6706ba7e1adbceaf74fa8e19273577d5f
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:40:44 2025 +0200
+
+    Add services.html file
+
+commit 75e892396eb610629b7271112a267bdccbbe2156 (origin/dev)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:10:34 2025 +0200
+
+    After adding all file and stashing
+
+commit a6308cba4efe82ba7a7f59a0515861138b351f65
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 12:54:53 2025 +0200
+
+    First bundle solutions exercise 1
+
+commit b860d430dcc9dd3dbb478c640f0e456ded789062 (switch)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 12:42:30 2025 +0200
+
+    feature: I added my first readme file in repo
+(END)
+2, ft/bundle-2)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 16:09:29 2025 +0200
+
+    Second bundle exercise 1 solution
+
+commit ab09f622df39c613a5981dd13e41d5581a447376
+Merge: b860d43 1b9438c
+Author: Elyse Iradukunda <ellycreativity8@gmail.com>
+Date:   Thu Jul 17 16:02:13 2025 +0200
+
+    Merge pull request #1 from elyse-iradukunda/ft/bundle-2
+2, ft/bundle-2)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 16:09:29 2025 +0200
+
+    Second bundle exercise 1 solution
+
+commit ab09f622df39c613a5981dd13e41d5581a447376
+Merge: b860d43 1b9438c
+Author: Elyse Iradukunda <ellycreativity8@gmail.com>
+Date:   Thu Jul 17 16:02:13 2025 +0200
+
+    Merge pull request #1 from elyse-iradukunda/ft/bundle-2
+
+    added new html files bundle 2
+
+commit 1b9438c6706ba7e1adbceaf74fa8e19273577d5f
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:40:44 2025 +0200
+
+    Add services.html file
+
+commit 75e892396eb610629b7271112a267bdccbbe2156 (origin/dev)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:10:34 2025 +0200
+
+    After adding all file and stashing
+
+commit a6308cba4efe82ba7a7f59a0515861138b351f65
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 12:54:53 2025 +0200
+
+    First bundle solutions exercise 1
+
+commit b860d430dcc9dd3dbb478c640f0e456ded789062 (switch)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 12:42:30 2025 +0200
+
+    feature: I added my first readme file in repo
+(END)
+2, ft/bundle-2)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 16:09:29 2025 +0200
+
+    Second bundle exercise 1 solution
+
+commit ab09f622df39c613a5981dd13e41d5581a447376
+Merge: b860d43 1b9438c
+Author: Elyse Iradukunda <ellycreativity8@gmail.com>
+Date:   Thu Jul 17 16:02:13 2025 +0200
+
+    Merge pull request #1 from elyse-iradukunda/ft/bundle-2
+
+    added new html files bundle 2
+
+commit 1b9438c6706ba7e1adbceaf74fa8e19273577d5f
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:40:44 2025 +0200
+
+    Add services.html file
+
+commit 75e892396eb610629b7271112a267bdccbbe2156 (origin/dev)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:10:34 2025 +0200
+
+    After adding all file and stashing
+
+commit a6308cba4efe82ba7a7f59a0515861138b351f65
+Author: Irael <user@LAPTOP-5DF3FEI>
+2, ft/bundle-2)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 16:09:29 2025 +0200
+
+    Second bundle exercise 1 solution
+
+commit ab09f622df39c613a5981dd13e41d5581a447376
+Merge: b860d43 1b9438c
+Author: Elyse Iradukunda <ellycreativity8@gmail.com>
+Date:   Thu Jul 17 16:02:13 2025 +0200
+
+    Merge pull request #1 from elyse-iradukunda/ft/bundle-2
+
+    added new html files bundle 2
+
+commit 1b9438c6706ba7e1adbceaf74fa8e19273577d5f
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:40:44 2025 +0200
+
+    Add services.html file
+
+commit 75e892396eb610629b7271112a267bdccbbe2156 (origin/dev)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:10:34 2025 +0200
+
+    After adding all file and stashing
+
+commit a6308cba4efe82ba7a7f59a0515861138b351f65
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 12:54:53 2025 +0200
+
+    First bundle solutions exercise 1
+
+commit b860d430dcc9dd3dbb478c640f0e456ded789062 (switch)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 12:42:30 2025 +0200
+
+    feature: I added my first readme file in repo
+(END)
+2, ft/bundle-2)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 16:09:29 2025 +0200
+
+    Second bundle exercise 1 solution
+
+commit ab09f622df39c613a5981dd13e41d5581a447376
+Merge: b860d43 1b9438c
+Author: Elyse Iradukunda <ellycreativity8@gmail.com>
+Date:   Thu Jul 17 16:02:13 2025 +0200
+
+    Merge pull request #1 from elyse-iradukunda/ft/bundle-2
+
+    added new html files bundle 2
+
+commit 1b9438c6706ba7e1adbceaf74fa8e19273577d5f
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:40:44 2025 +0200
+
+    Add services.html file
+
+commit 75e892396eb610629b7271112a267bdccbbe2156 (origin/dev)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:10:34 2025 +0200
+
+    After adding all file and stashing
+
+commit a6308cba4efe82ba7a7f59a0515861138b351f65
+Author: Irael <user@LAPTOP-5DF3FEI>
+2, ft/bundle-2)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 16:09:29 2025 +0200
+
+    Second bundle exercise 1 solution
+
+commit ab09f622df39c613a5981dd13e41d5581a447376
+Merge: b860d43 1b9438c
+Author: Elyse Iradukunda <ellycreativity8@gmail.com>
+Date:   Thu Jul 17 16:02:13 2025 +0200
+
+    Merge pull request #1 from elyse-iradukunda/ft/bundle-2
+
+    added new html files bundle 2
+
+commit 1b9438c6706ba7e1adbceaf74fa8e19273577d5f
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:40:44 2025 +0200
+
+    Add services.html file
+
+commit 75e892396eb610629b7271112a267bdccbbe2156 (origin/dev)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:10:34 2025 +0200
+
+    After adding all file and stashing
+
+commit a6308cba4efe82ba7a7f59a0515861138b351f65
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 12:54:53 2025 +0200
+
+    First bundle solutions exercise 1
+
+commit b860d430dcc9dd3dbb478c640f0e456ded789062 (switch)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 12:42:30 2025 +0200
+
+    feature: I added my first readme file in repo
+(END)
+2, ft/bundle-2)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 16:09:29 2025 +0200
+
+    Second bundle exercise 1 solution
+
+commit ab09f622df39c613a5981dd13e41d5581a447376
+Merge: b860d43 1b9438c
+Author: Elyse Iradukunda <ellycreativity8@gmail.com>
+Date:   Thu Jul 17 16:02:13 2025 +0200
+
+    Merge pull request #1 from elyse-iradukunda/ft/bundle-2
+
+    added new html files bundle 2
+
+commit 1b9438c6706ba7e1adbceaf74fa8e19273577d5f
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:40:44 2025 +0200
+
+    Add services.html file
+
+commit 75e892396eb610629b7271112a267bdccbbe2156 (origin/dev)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:10:34 2025 +0200
+
+    After adding all file and stashing
+
+commit a6308cba4efe82ba7a7f59a0515861138b351f65
+Author: Irael <user@LAPTOP-5DF3FEI>
+2, ft/bundle-2)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 16:09:29 2025 +0200
+
+    Second bundle exercise 1 solution
+
+commit ab09f622df39c613a5981dd13e41d5581a447376
+Merge: b860d43 1b9438c
+Author: Elyse Iradukunda <ellycreativity8@gmail.com>
+Date:   Thu Jul 17 16:02:13 2025 +0200
+
+    Merge pull request #1 from elyse-iradukunda/ft/bundle-2
+
+    added new html files bundle 2
+
+commit 1b9438c6706ba7e1adbceaf74fa8e19273577d5f
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:40:44 2025 +0200
+
+    Add services.html file
+
+commit 75e892396eb610629b7271112a267bdccbbe2156 (origin/dev)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:10:34 2025 +0200
+
+    After adding all file and stashing
+
+commit a6308cba4efe82ba7a7f59a0515861138b351f65
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 12:54:53 2025 +0200
+
+    First bundle solutions exercise 1
+
+commit b860d430dcc9dd3dbb478c640f0e456ded789062 (switch)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 12:42:30 2025 +0200
+
+    feature: I added my first readme file in repo
+(END)
+2, ft/bundle-2)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 16:09:29 2025 +0200
+
+    Second bundle exercise 1 solution
+
+commit ab09f622df39c613a5981dd13e41d5581a447376
+Merge: b860d43 1b9438c
+Author: Elyse Iradukunda <ellycreativity8@gmail.com>
+Date:   Thu Jul 17 16:02:13 2025 +0200
+
+    Merge pull request #1 from elyse-iradukunda/ft/bundle-2
+2, ft/bundle-2)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 16:09:29 2025 +0200
+
+    Second bundle exercise 1 solution
+
+commit ab09f622df39c613a5981dd13e41d5581a447376
+Merge: b860d43 1b9438c
+Author: Elyse Iradukunda <ellycreativity8@gmail.com>
+Date:   Thu Jul 17 16:02:13 2025 +0200
+
+    Merge pull request #1 from elyse-iradukunda/ft/bundle-2
+
+    added new html files bundle 2
+
+commit 1b9438c6706ba7e1adbceaf74fa8e19273577d5f
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:40:44 2025 +0200
+
+    Add services.html file
+
+commit 75e892396eb610629b7271112a267bdccbbe2156 (origin/dev)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:10:34 2025 +0200
+
+    After adding all file and stashing
+
+commit a6308cba4efe82ba7a7f59a0515861138b351f65
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 12:54:53 2025 +0200
+
+    First bundle solutions exercise 1
+
+commit b860d430dcc9dd3dbb478c640f0e456ded789062 (switch)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 12:42:30 2025 +0200
+
+    feature: I added my first readme file in repo
+(END)
+2, ft/bundle-2)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 16:09:29 2025 +0200
+
+    Second bundle exercise 1 solution
+
+commit ab09f622df39c613a5981dd13e41d5581a447376
+Merge: b860d43 1b9438c
+Author: Elyse Iradukunda <ellycreativity8@gmail.com>
+Date:   Thu Jul 17 16:02:13 2025 +0200
+
+    Merge pull request #1 from elyse-iradukunda/ft/bundle-2
+
+    added new html files bundle 2
+
+commit 1b9438c6706ba7e1adbceaf74fa8e19273577d5f
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:40:44 2025 +0200
+
+    Add services.html file
+
+commit 75e892396eb610629b7271112a267bdccbbe2156 (origin/dev)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:10:34 2025 +0200
+
+    After adding all file and stashing
+
+commit a6308cba4efe82ba7a7f59a0515861138b351f65
+Author: Irael <user@LAPTOP-5DF3FEI>
+2, ft/bundle-2)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 16:09:29 2025 +0200
+
+    Second bundle exercise 1 solution
+
+commit ab09f622df39c613a5981dd13e41d5581a447376
+Merge: b860d43 1b9438c
+Author: Elyse Iradukunda <ellycreativity8@gmail.com>
+Date:   Thu Jul 17 16:02:13 2025 +0200
+
+    Merge pull request #1 from elyse-iradukunda/ft/bundle-2
+
+    added new html files bundle 2
+
+commit 1b9438c6706ba7e1adbceaf74fa8e19273577d5f
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:40:44 2025 +0200
+
+    Add services.html file
+
+commit 75e892396eb610629b7271112a267bdccbbe2156 (origin/dev)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:10:34 2025 +0200
+
+    After adding all file and stashing
+
+commit a6308cba4efe82ba7a7f59a0515861138b351f65
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 12:54:53 2025 +0200
+
+    First bundle solutions exercise 1
+
+commit b860d430dcc9dd3dbb478c640f0e456ded789062 (switch)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 12:42:30 2025 +0200
+
+    feature: I added my first readme file in repo
+(END)
+2, ft/bundle-2)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 16:09:29 2025 +0200
+
+    Second bundle exercise 1 solution
+
+commit ab09f622df39c613a5981dd13e41d5581a447376
+Merge: b860d43 1b9438c
+Author: Elyse Iradukunda <ellycreativity8@gmail.com>
+Date:   Thu Jul 17 16:02:13 2025 +0200
+
+    Merge pull request #1 from elyse-iradukunda/ft/bundle-2
+
+    added new html files bundle 2
+
+commit 1b9438c6706ba7e1adbceaf74fa8e19273577d5f
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:40:44 2025 +0200
+
+    Add services.html file
+
+commit 75e892396eb610629b7271112a267bdccbbe2156 (origin/dev)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:10:34 2025 +0200
+
+    After adding all file and stashing
+
+commit a6308cba4efe82ba7a7f59a0515861138b351f65
+Author: Irael <user@LAPTOP-5DF3FEI>
+2, ft/bundle-2)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 16:09:29 2025 +0200
+
+    Second bundle exercise 1 solution
+
+commit ab09f622df39c613a5981dd13e41d5581a447376
+Merge: b860d43 1b9438c
+Author: Elyse Iradukunda <ellycreativity8@gmail.com>
+Date:   Thu Jul 17 16:02:13 2025 +0200
+
+    Merge pull request #1 from elyse-iradukunda/ft/bundle-2
+
+    added new html files bundle 2
+
+commit 1b9438c6706ba7e1adbceaf74fa8e19273577d5f
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:40:44 2025 +0200
+
+    Add services.html file
+
+commit 75e892396eb610629b7271112a267bdccbbe2156 (origin/dev)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:10:34 2025 +0200
+
+    After adding all file and stashing
+
+commit a6308cba4efe82ba7a7f59a0515861138b351f65
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 12:54:53 2025 +0200
+
+    First bundle solutions exercise 1
+
+commit b860d430dcc9dd3dbb478c640f0e456ded789062 (switch)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 12:42:30 2025 +0200
+
+    feature: I added my first readme file in repo
+(END)
+2, ft/bundle-2)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 16:09:29 2025 +0200
+
+    Second bundle exercise 1 solution
+
+commit ab09f622df39c613a5981dd13e41d5581a447376
+Merge: b860d43 1b9438c
+Author: Elyse Iradukunda <ellycreativity8@gmail.com>
+Date:   Thu Jul 17 16:02:13 2025 +0200
+
+    Merge pull request #1 from elyse-iradukunda/ft/bundle-2
+
+    added new html files bundle 2
+
+commit 1b9438c6706ba7e1adbceaf74fa8e19273577d5f
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:40:44 2025 +0200
+
+    Add services.html file
+
+commit 75e892396eb610629b7271112a267bdccbbe2156 (origin/dev)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:10:34 2025 +0200
+
+    After adding all file and stashing
+
+commit a6308cba4efe82ba7a7f59a0515861138b351f65
+Author: Irael <user@LAPTOP-5DF3FEI>
+2, ft/bundle-2)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 16:09:29 2025 +0200
+
+    Second bundle exercise 1 solution
+
+commit ab09f622df39c613a5981dd13e41d5581a447376
+Merge: b860d43 1b9438c
+Author: Elyse Iradukunda <ellycreativity8@gmail.com>
+Date:   Thu Jul 17 16:02:13 2025 +0200
+
+    Merge pull request #1 from elyse-iradukunda/ft/bundle-2
+
+    added new html files bundle 2
+
+commit 1b9438c6706ba7e1adbceaf74fa8e19273577d5f
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:40:44 2025 +0200
+
+    Add services.html file
+
+commit 75e892396eb610629b7271112a267bdccbbe2156 (origin/dev)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:10:34 2025 +0200
+
+    After adding all file and stashing
+
+commit a6308cba4efe82ba7a7f59a0515861138b351f65
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 12:54:53 2025 +0200
+
+    First bundle solutions exercise 1
+
+commit b860d430dcc9dd3dbb478c640f0e456ded789062 (switch)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 12:42:30 2025 +0200
+
+    feature: I added my first readme file in repo
+(END)
+2, ft/bundle-2)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 16:09:29 2025 +0200
+
+    Second bundle exercise 1 solution
+
+commit ab09f622df39c613a5981dd13e41d5581a447376
+Merge: b860d43 1b9438c
+Author: Elyse Iradukunda <ellycreativity8@gmail.com>
+Date:   Thu Jul 17 16:02:13 2025 +0200
+
+    Merge pull request #1 from elyse-iradukunda/ft/bundle-2
+
+    added new html files bundle 2
+
+commit 1b9438c6706ba7e1adbceaf74fa8e19273577d5f
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:40:44 2025 +0200
+
+    Add services.html file
+
+commit 75e892396eb610629b7271112a267bdccbbe2156 (origin/dev)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:10:34 2025 +0200
+
+    After adding all file and stashing
+
+commit a6308cba4efe82ba7a7f59a0515861138b351f65
+Author: Irael <user@LAPTOP-5DF3FEI>
+2, ft/bundle-2)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 16:09:29 2025 +0200
+
+    Second bundle exercise 1 solution
+
+commit ab09f622df39c613a5981dd13e41d5581a447376
+Merge: b860d43 1b9438c
+Author: Elyse Iradukunda <ellycreativity8@gmail.com>
+Date:   Thu Jul 17 16:02:13 2025 +0200
+
+    Merge pull request #1 from elyse-iradukunda/ft/bundle-2
+
+    added new html files bundle 2
+
+commit 1b9438c6706ba7e1adbceaf74fa8e19273577d5f
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:40:44 2025 +0200
+
+    Add services.html file
+
+commit 75e892396eb610629b7271112a267bdccbbe2156 (origin/dev)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:10:34 2025 +0200
+
+    After adding all file and stashing
+
+commit a6308cba4efe82ba7a7f59a0515861138b351f65
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 12:54:53 2025 +0200
+
+    First bundle solutions exercise 1
+
+commit b860d430dcc9dd3dbb478c640f0e456ded789062 (switch)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 12:42:30 2025 +0200
+
+    feature: I added my first readme file in repo
+(END)
+2, ft/bundle-2)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 16:09:29 2025 +0200
+
+    Second bundle exercise 1 solution
+
+commit ab09f622df39c613a5981dd13e41d5581a447376
+Merge: b860d43 1b9438c
+Author: Elyse Iradukunda <ellycreativity8@gmail.com>
+Date:   Thu Jul 17 16:02:13 2025 +0200
+
+    Merge pull request #1 from elyse-iradukunda/ft/bundle-2
+
+    added new html files bundle 2
+
+commit 1b9438c6706ba7e1adbceaf74fa8e19273577d5f
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:40:44 2025 +0200
+
+    Add services.html file
+
+commit 75e892396eb610629b7271112a267bdccbbe2156 (origin/dev)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:10:34 2025 +0200
+
+    After adding all file and stashing
+
+commit a6308cba4efe82ba7a7f59a0515861138b351f65
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 12:54:53 2025 +0200
+
+    First bundle solutions exercise 1
+
+commit b860d430dcc9dd3dbb478c640f0e456ded789062 (switch)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 12:42:30 2025 +0200
+
+    feature: I added my first readme file in repo
+(END)
+2, ft/bundle-2)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 16:09:29 2025 +0200
+Date:   Thu Jul 17 17:07:32 2025 +0200
+
+    Merge pull request #2 from elyse-iradukunda/ft/bundle-2
+
+    Second bundle exercise 1 solution
+
+commit 0161ce718d61aae93de8c0798fd366ad72bfc0ce (list)
+Merge: a03ac26 ab09f62
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 17:06:35 2025 +0200
+
+    merge
+
+commit a03ac26268e8d53140a6d0b8007136ee2e87fd32
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 16:24:56 2025 +0200
+
+    before going to dev
+
+commit 052f083d6b698c021cca2db5a88061199389ba88 (origin/ft/bundle-commit 052f083d6b698c021cca2db5a88061199389ba88 (origin/ft/bundle-commit 052f083d6b698c021cca2db5a88061199389ba88 (origin/ft/bundle-2, ft/bundle-2)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 16:09:29 2025 +0200
+
+    Second bundle exercise 1 solution
+
+commit ab09f622df39c613a5981dd13e41d5581a447376
+Merge: b860d43 1b9438c
+Author: Elyse Iradukunda <ellycreativity8@gmail.com>
+Date:   Thu Jul 17 16:02:13 2025 +0200
+
+    Merge pull request #1 from elyse-iradukunda/ft/bundle-2
+
+    added new html files bundle 2
+
+commit 1b9438c6706ba7e1adbceaf74fa8e19273577d5f
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:40:44 2025 +0200
+
+    Add services.html file
+
+commit 75e892396eb610629b7271112a267bdccbbe2156 (origin/dev)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 15:10:34 2025 +0200
+
+    After adding all file and stashing
+
+commit a6308cba4efe82ba7a7f59a0515861138b351f65
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 12:54:53 2025 +0200
+
+    First bundle solutions exercise 1
+
+commit b860d430dcc9dd3dbb478c640f0e456ded789062 (switch)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Thu Jul 17 12:42:30 2025 +0200
+
+    feature: I added my first readme file in repo
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (ft/team-page)
+$
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (ft/team-page)
+$ git checkout ft/contact-page
+M       README.md
+Switched to branch 'ft/contact-page'
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (ft/contact-page)
+$ git log ft/team-page -1
+commit 126439162567d42da173d15d534dd69c31935099 (origin/ft/team-page, ft/team-page)
+Author: Irael <user@LAPTOP-5DF3FEI>
+Date:   Sun Jul 20 14:17:20 2025 +0200
+
+    added new file team.html
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (ft/contact-page)
+$ git cherry-pick 126439162567d42da173d15d534dd69c31935099
+[ft/contact-page 73a54e0] added new file team.html
+ Date: Sun Jul 20 14:17:20 2025 +0200
+ 1 file changed, 2 insertions(+)
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (ft/contact-page)
+$ git commit -m'some changes on contact-page'
+On branch ft/contact-page
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (ft/contact-page)
+$ git push
+fatal: The current branch ft/contact-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/contact-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (ft/contact-page)
+$ git push --set-upstream origin ft/contact-page
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 348 bytes | 348.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/elyse-iradukunda/Gym-Git-Exercise-Solutions/pull/new/ft/contact-page
+remote:
+To https://github.com/elyse-iradukunda/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+branch 'ft/contact-page' set up to track 'origin/ft/contact-page'.
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (ft/contact-page)
+$ git branch ft/faq-page
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (ft/contact-page)
+$ git checkout ft/faq-page
+M       README.md
+Switched to branch 'ft/faq-page'
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (ft/faq-page)
+$ git add faq.html
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (ft/faq-page)
+$ git commit -m'adding faq page'
+[ft/faq-page 97b527e] adding faq page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 faq.html
+
+[ft/faq-page 0b99c7a] Revert "added new file team.html"
+ 1 file changed, 2 deletions(-)
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (ft/faq-page)
+$ git commit -m'last for bundle 3 exercise 1'
+On branch ft/faq-page
+Your branch is ahead of 'origin/ft/faq-page' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (ft/faq-page)
+$ git push --set-upstream
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 357 bytes | 357.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/elyse-iradukunda/Gym-Git-Exercise-Solutions.git
+   97b527e..0b99c7a  ft/faq-page -> ft/faq-page
+branch 'ft/faq-page' set up to track 'origin/ft/faq-page'.
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (ft/faq-page)
+$
 
 ```
