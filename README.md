@@ -1631,3 +1631,125 @@ user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (main)
 $
 
 ```
+## Bundle 4
+### Exercise 1
+
+```
+
+
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (main)
+$
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (main)
+$ git remote add https://github.com/elyse-iradukunda/git-copy.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --[no-]fetch      fetch the remote branches
+    --[no-]tags           import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --[no-]track <branch>
+                          branch(es) to track
+    -m, --[no-]master <branch>
+                          master branch
+    --[no-]mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (main)
+$ git remote -v
+origin  https://github.com/elyse-iradukunda/Gym-Git-Exercise-Solutions.git (fetch)
+origin  https://github.com/elyse-iradukunda/Gym-Git-Exercise-Solutions.git (push)
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (main)
+$ git add home.html
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (main)
+$ git commit -m'updated home page text contents'
+[main 463d4f9] updated home page text contents
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 372 bytes | 372.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/elyse-iradukunda/Gym-Git-Exercise-Solutions.git
+   40052b4..463d4f9  main -> main
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (main)
+$ git push git-copy main
+fatal: 'git-copy' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (main)
+$ ^C
+
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (main)
+$ git remote -v
+origin  https://github.com/elyse-iradukunda/Gym-Git-Exercise-Solutions.git (fetch)
+origin  https://github.com/elyse-iradukunda/Gym-Git-Exercise-Solutions.git (push)
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (main)
+$ git remote add https://github.com/elyse-iradukunda/git-copy.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --[no-]fetch      fetch the remote branches
+    --[no-]tags           import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --[no-]track <branch>
+                          branch(es) to track
+    -m, --[no-]master <branch>
+                          master branch
+    --[no-]mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (main)
+$ git remote add git-copy https://github.com/elyse-iradukunda/git-copy.git
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (main)
+$ git remote -v
+git-copy        https://github.com/elyse-iradukunda/git-copy.git (fetch)
+git-copy        https://github.com/elyse-iradukunda/git-copy.git (push)
+origin  https://github.com/elyse-iradukunda/Gym-Git-Exercise-Solutions.git (fetch)
+origin  https://github.com/elyse-iradukunda/Gym-Git-Exercise-Solutions.git (push)
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (main)
+$ git add home.html
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (main)
+$ git commit -m'updated home page text contents'
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (main)
+$ git push origin main
+Everything up-to-date
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (main)
+$ git push git-copy main
+Enumerating objects: 44, done.
+Counting objects: 100% (44/44), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (41/41), done.
+Writing objects: 100% (44/44), 10.99 KiB | 1.57 MiB/s, done.
+Total 44 (delta 19), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (19/19), done.
+To https://github.com/elyse-iradukunda/git-copy.git
+ * [new branch]      main -> main
+
+user@Irael MINGW64 /d/Coding/Gym_Git_Exercise_Solutions (main)
+$
+```
+### Exercice 2
